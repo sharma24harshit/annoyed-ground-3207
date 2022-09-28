@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://kit.fontawesome.com/722f6b0acd.js" crossorigin="anonymous"></script>
+    
+
+</head>
+
+<style>
+    body{
+        margin:0;
+    }
+      /*****************    Top navabr styling    *****************8*/
+    #navbar{
+        cursor: pointer;
+    }
+    #top-navbar{
+        display:flex;
+        padding-left: 110px;
+        padding-right:110px ;
+        height:40px;
+        justify-content: space-between;
+        background-image: url(https://adn-static1.nykaa.com/media/wysiwyg/2022/common-strip-festive-sale.png);
+    }
+    #top-navbar>div:last-child{
+        width:40%;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        font-weight: 500;
+    }
+    #top-navbar>div:last-child>div:hover{
+        color:white;
+    }
+    #timed_ele{
+     visibility: hidden;
+     display: flex;
+     align-items: center;
+     font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* ********************    mid navbar styling  **************************/
+    #mid-navbar{
+        height:70px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 70px ;
+    }
+    #mid-navbar>div:first-child{
+        width:50%;
+        display: flex;
+        justify-content: space-around;
+        align-items:center ;
+        font-weight: bold;
+        font-family:  sans-serif;
+        font-size: 14px;
+        color:rgb(3,2,26);
+    }
+    #logo{
+        height: 65%;
+    }
+    #logo>img{
+        height:100%;
+    }
+    #mid-navbar>div:last-child{
+        width:35%;
+        display: flex;
+        justify-content: space-around;
+        align-items:center ;
+        font-family:  sans-serif;
+        font-size: 14px;
+        color:rgb(3,2,26);
+    }
+    #mid-navbar>div:last-child input{
+        padding:12px 18px;
+        background-color: rgb(244,244,244);
+        border-radius: 6px;
+        border:1px solid  rgb(175, 171, 171);
+        font-size: 15px;
+        color: rgb(157,157,157);
+    }
+   /* ********************    bottom navbar styling  **************************/
+   #bottom-navbar{
+    height:50px;
+    background-color: rgb(255,255,255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   }
+   #bottom-navbar>div{
+        width:80%;
+        height:100%;
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(255,255,255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+   
+    #bottom-navbar>div {
+    transition: top 0.3s;
+    }
+
+    #bottom-navbar>div>div {
+    float: left;
+    display: block;
+    text-decoration: none;
+    }
+    #bottom-navbar_main>div>button{
+        background-color: rgb(255,255,255);
+        color: rgb(117, 114, 121);
+        border:0;
+        height:50px;
+    }
+    #bottom-navbar_main>div>button:hover{
+        color:rgb(247, 21, 134);
+      font-weight: bold;
+      cursor: pointer;
+    }
+         /* ********************    drop navbar styling  **************************/
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 60%;
+  left: 30;
+  z-index: 1;
+}
+
+#dropdown_makeup:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 400px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 4px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+   /*******************************    Homepage footer styling    ******************************/
+   #footer-top{
+    height:200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3f414d;
+   }
+   #footer-top>div{
+    color:white;
+    height: 80%;
+   }
+   #footer-top>div:nth-child(1){
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+   }
+   #footer-top>div:nth-child(1)>input{
+   padding: 8px;
+   background-color:#3f414d ;
+   border:0;
+   font-weight: bold;
+   color: #989ba5;
+   border-bottom: 2px solid white;
+   
+   }
+   #footer-top>div:nth-child(1)>button{
+    padding:8px 10px;
+    background-color:#3f414d ;
+    color:white;
+    border: 1px solid white;
+   }
+   #footer-top>div:nth-child(2){
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+   text-align: center;
+   }
+   #footer-top>div:nth-child(2)>div{
+    width:120px;
+    height:35px;
+    border:1px solid grey;
+    margin: auto;
+    border-radius: 8px;
+   }
+   #footer-top>div:nth-child(2)>div:last-child{
+    width:90px;
+    height:35px;
+    border:1px solid grey;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 5px;
+   }
+   #footer-top>div:nth-child(2)>div>img{
+    height:100%;
+    border-radius: 8px;;
+   }
+   #footer-top>div:nth-child(3){
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    width:25%;
+   }
+   #footer-top>div:nth-child(3)>p:first-child{
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 16px;
+    
+   }
+</style>
+
+<body>
+     <div id="navbar">
+        <!-- Top Navbar  start-->
+        <div id="top-navbar">
+
+            <div id="timed_ele">
+                <h4>Grand Festive Sale Is Live - Up To 50% Off</h4>
+            </div>
+
+            <div>
+               
+             <div > <i class="fa-solid fa-mobile-screen-button"></i> Get App</div>
+               <div>|</div> 
+             <div> <i class="fa-solid fa-location-dot"></i>  Store & Events</div>
+              <div>|</div> 
+             <div> <i class="fa-solid fa-gift"></i> Gift Card</div>
+             <div>|</div> 
+             <div> <i class="fa-regular fa-circle-question"></i> Help</div>
+            </div>
+             
+        </div>
+        <!-- Top Navbar  end-->
+    <!-- //******************************************************************************// -->
+        <!-- mid Navbar start -->
+        <div id="mid-navbar">
+
+            <div>
+                <div id="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK47iYyT-3X758RkOppaeJ6z-1UPe_ehVqq-ldzFiA_Rw3Cwv_vQY_vk0MtNo7DsZg_Eg&usqp=CAU" alt="Nykaa logo img"></div>
+                <div>Categories</div>
+                <div>Brands</div>
+                <div>Luxe</div>
+                <div>Nykaa Fashion</div>
+                <div>Beauty Advice</div>
+            </div>
+
+            <div>
+                <div> <input type="text"  placeholder= "Search on Nykaa"> </div>
+                <div><i class="fa-regular fa-user" ></i> Account </div>
+                <div> <i class="fa-solid fa-bag-shopping"></i> </div>
+            </div>
+
+        </div>
+        <!-- mid Navbar start -->
+<!-- //******************************************************************************// -->
+        <!-- mid Navbar start -->
+      
+        <div id="bottom-navbar">
+            <div id="bottom-navbar_main">
+                <div id="dropdown_makeup">
+                    <button>Makeup</button>
+                    <div class="dropdown-content">
+                           
+                        <div class="row">
+                          <div class="column"></div>
+                          
+                        </div>
+                      </div>
+                </div>
+
+                <div>
+                    <button>Skin</button>
+                </div>
+
+                <div>
+                    <button>Hair</button>
+                </div>
+
+                <div>
+                    <button>Appliances</button>
+                </div>
+
+                <div>
+                    <button>Bath & Body</button>
+                </div>
+
+                <div>
+                    <button>Natural</button>
+                </div>
+
+                <div>
+                    <button>Mom & Baby</button>
+                </div>
+
+                <div>
+                    <button>Health & Wellness</button>
+                </div>
+
+                <div>
+                    <button>Men</button>
+                </div>
+
+                <div>
+                    <button>Fragrance</button>
+                </div>
+
+                <div>
+                    <button>Pop Ups</button>
+                </div>
+
+            </div>
+        </div>
+        
+     </div>
+  <!-- footer of Home Page -->
+     <div id="footer">
+
+        <div id="footer-top">
+
+            <div>
+                <p><i class="fa-solid fa-envelope"></i> Get special discount on your inbox</p>
+                <input type="text" placeholder="Your Email">
+                <button>SEND</button>
+            </div>
+
+            <div>
+                <p><i class="fa-solid fa-mobile-screen"></i> experience the nykaa mobile </p>
+                 <p>App</p>
+                 <div><img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/androidbadgesbox2.png" alt=""></div>
+                 <div><img src="https://igeotechgps.com/wp-content/uploads/2022/03/SeekPng.com_google-play-store-logo_2231228.png" alt=""></div>
+            </div>
+
+            <div>
+                <p> <i class="fa-solid fa-phone-flip"></i> for any help you may call us at
+                    1800-267-4444</p>
+                <p> (Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</p>
+            </div>
+
+        </div>
+<!-- ***********************************    footer-top end   ********************************** -->
+        <div id="footer-mid"></div>
+
+        <div id="footer-bottom"></div>
+
+        <div id="footer-end"></div>
+
+     </div>
+</body>
+</html>
+
+<script>
+
+    ////   Top-navbar timed text code /////
+    function showdiv(){
+       let text =  document.querySelector("#timed_ele");
+       text.style.visibility = "visible";
+    }
+    setInterval("showdiv()",1000);
+
+    function hidediv(){
+       let text =  document.querySelector("#timed_ele");
+       text.style.visibility = "hidden";
+    }
+    setInterval("hidediv()",2000);
+
+    ////   Top-navbar timed text code /////
+    ////    **********************************************   ///
+    // ************  Drop down code ******************* //
+    var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+         document.getElementById("bottom-navbar").style.top = "0";
+        } else {
+         document.getElementById("bottom-navbar").style.top = "-50px";
+        }
+    prevScrollpos = currentScrollPos;
+    }
+   ////////////  **********************************************///////////////////////
+   
+   let objColumn1 = [
+    "Face", "Face Primer", "Concealer", "Foundation", "Compact", "Contour", 
+    "Loose Powder", "Tined Moisturizer", "Blush", "Bronzer","BB & CC Cream",
+    "Highlighters", "Setting Spray", "Makeup Remover", "Sindoor",
+]
+   
+   let col = document.querySelector(".column");
+   
+
+   objColumn1.forEach(function (el){
+       
+       let row = document.createElement("a");
+       row.innerText = el;
+       col.append(row);
+   })
+   
+
+</script>
+
+                            
+                            
+                           
+                           
+                            
