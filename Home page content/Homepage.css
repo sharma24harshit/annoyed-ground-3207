@@ -1,0 +1,668 @@
+
+#homepage_titles{
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#3f4152
+}
+* {box-sizing: border-box;}
+body {margin:0}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+.mySlides{
+ width:100%;
+}
+.mySlides>img{
+    width:100%;
+}
+#main_slideshow-container{
+    background-color: #f3f3f3;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: pink;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: rgb(233, 112, 132);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+#dots{
+    text-align:center;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ /*-----------------------       top sliding image styling end          ---------------------------*/
+
+ #main_grey_box{
+    background-color: #f3f3f3;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+ }
+ .mySlides1 {
+    display: none;
+    width:90%;
+    margin:auto;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container1 */
+.slideshow-container1 {
+    width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.8s ease;
+  border-radius: 40px ;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 40px;
+}
+
+/* On hover, add a white background color  */
+.prev:hover, .next:hover {
+  background-color: rgb(255, 255, 255)
+}
+
+/*Fading animation */
+ .fade1 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+} 
+
+@keyframes fade1 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*-----------------------        Below Top sliding image  styling end          ---------------------------*/
+#image-div_1{
+    margin-top: 100px;
+    width:85%;
+    margin: auto;
+    row-gap: 30px;
+}
+#image-div_1>div>img{
+    width:100%;
+}
+#image-div_1>div>img:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#image-div_1>div{
+    margin-bottom:20px;
+}
+/*-----------------------        Rupay card and offer image   styling end          ---------------------------*/
+
+#image-div_2{
+    width:85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,330px);
+    gap:20px;
+}
+#image-div_2>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#image-div_2>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#image-div_2>div:nth-child(1){
+background-image: url(https://images-static.nykaa.com/uploads/759062af-8ef8-40d8-804a-51765b9013e4.jpg?tr=w-600,cm-pad_resize);
+}
+#image-div_2>div:nth-child(2){
+    background-image: url(https://images-static.nykaa.com/uploads/de569249-9a36-48d0-b5cf-fd5f3c69b390.jpg?tr=w-600,cm-pad_resize);
+}
+#image-div_2>div:nth-child(3){
+    background-image: url(https://images-static.nykaa.com/uploads/4103ae09-66db-490e-a549-abaafa0fa050.jpg?tr=w-600,cm-pad_resize);
+}
+#image-div_2>div:nth-child(4){
+    background-image: url(https://images-static.nykaa.com/uploads/810bcb4c-3eff-440a-b1bf-8320983045a4.jpg?tr=w-600,cm-pad_resize);
+}
+#image-div_2>div:nth-child(5){
+    background-image: url(https://images-static.nykaa.com/uploads/8f367617-22f4-4877-ad59-07cbae72a99e.jpg?tr=w-600,cm-pad_resize);
+}
+#image-div_2>div:nth-child(6){
+    background-image: url(https://images-static.nykaa.com/uploads/b7e2396a-56b6-448a-aa0a-fc622768120a.jpg?tr=w-600,cm-pad_resize);
+}
+#image-div_2>div:nth-child(7){
+    background-image: url(https://images-static.nykaa.com/uploads/6e497311-b843-40bc-9843-55afbaff9b5f.jpg?tr=w-600,cm-pad_resize);
+}
+#image-div_2>div:nth-child(8){
+    background-image: url(https://images-static.nykaa.com/uploads/2fb9a802-f82c-4e0b-a132-aa0f3535a705.jpg?tr=w-600,cm-pad_resize);
+}
+#image-div_2>div>div{
+    border:2px solid white;
+    height:80px;
+    width:95%;
+    margin: auto;
+    margin-top: 250px;
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    line-height: 6px;
+}
+#image-div_2>div>div>p:first-child{
+  color:  #f8518e;
+}
+#image-div_2>div>div>p:last-child{
+ color: #9c8f8c;
+}
+/*-----------------------       Top Brand title  styling end          ---------------------------*/
+
+ .mySlides2 {
+    display: none;
+    width:90%;
+    margin:auto;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container1 */
+.slideshow-container2 {
+    width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Next & previous buttons */
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.8s ease;
+  border-radius: 40px ;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 40px;
+}
+
+/* On hover, add a white background color  */
+.prev2:hover, .next2:hover {
+  background-color: rgb(255, 255, 255)
+}
+
+/*Fading animation */
+ .fade2 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+} 
+
+@keyframes fade2 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*-----------------------         sliding image 2nd - styling end          ---------------------------*/
+#image-div_3{
+    width:85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,330px);
+    gap:20px;
+}
+#image-div_3>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#image-div_3>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#image-div_3>div:nth-child(1){
+background-image: url(https://images-static.nykaa.com/uploads/48b0e7b8-bff9-44ad-b458-670455d3ee00.jpg?tr=w-600,cm-pad_resize);
+}
+#image-div_3>div:nth-child(2){
+    background-image: url(https://images-static.nykaa.com/uploads/33ca48ba-613a-43e8-bec9-88cf09282e80.jpg?tr=w-600,cm-pad_resize);
+}
+#image-div_3>div:nth-child(3){
+    background-image: url(https://images-static.nykaa.com/uploads/8b792d21-c756-40ec-864c-236cf1cc3415.jpg?tr=w-600,cm-pad_resize);
+}
+#image-div_3>div:nth-child(4){
+    background-image: url(https://images-static.nykaa.com/uploads/e508f06c-a92f-4dd7-be64-040f15222614.jpg?tr=w-600,cm-pad_resize);
+}
+
+#image-div_3>div>div{
+    border:2px solid white;
+    height:80px;
+    width:95%;
+    margin: auto;
+    margin-top: 250px;
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    line-height: 6px;
+}
+#image-div_3>div>div>p:first-child{
+  color:  #f8518e;
+}
+#image-div_3>div>div>p:last-child{
+ color: #9c8f8c;
+}
+/*-----------------------       Only At Nykaa title - styling end          ---------------------------*/
+#above_sliding_image_4{
+ margin-top: 40px;
+}
+#above_sliding_image_4>img{
+    width:100%;
+}
+
+/*-----------------------       Top Brand title  styling end          ---------------------------*/
+
+.mySlides3 {
+    /* display: none; */
+    width:90%;
+    margin:auto;
+    height: 100%;
+}
+.mySlides3>img{
+    width:15%;
+    height:100%;
+}
+/* Slideshow container1 */
+.slideshow-container3 {
+    width: 100%;
+  position: relative;
+  background-color:  #fbe1e8;
+  height:280px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 60px;
+  padding: 15px 0px;
+}
+
+/* Next & previous buttons */
+.prev3, .next3 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.8s ease;
+  border-radius: 40px ;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next3 {
+  right: 0;
+  border-radius: 40px;
+}
+
+/* On hover, add a white background color  */
+.prev3:hover, .next3:hover {
+  background-color: rgb(255, 255, 255)
+}
+
+/*Fading animation */
+ .fade3 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+} 
+
+@keyframes fade3 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*-----------------------         sliding image 3rd - styling end          ---------------------------*/
+#image-div_4{
+    width:85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,auto);
+    gap:20px;
+}
+#image-div_4>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#image-div_4>div>img{
+    width:100%;
+}
+#image-div_4>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#image-div_4>div>div{
+    background-color: white;
+    text-align: center;
+    border:1px solid white;
+    font-weight: 500;
+    line-height: 3px;
+}
+#image-div_4>div>div>p:first-child{
+    color:  #f8518e;
+}
+#image-div_4>div>div>p:last-child{
+    color: #9c8f8c;
+}
+#image-div_4>div:nth-child(9){
+ grid-area: 3/2/4/3;
+}
+#image-div_4>div:nth-child(10){
+    grid-area:3/3/4/4; ;
+}
+/*-----------------------         Featured Brands Title - styling end          ---------------------------*/
+#image-div_5{
+    width:85%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,330px);
+    gap:20px;
+}
+#image-div_5>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#image-div_5>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#image-div_5>div:nth-child(1){
+background-image: url(https://images-static.nykaa.com/uploads/ab8071f9-ec0d-4934-a9d1-ecfd1185595b.jpg?tr=w-600,cm-pad_resize);
+grid-area: 1/1/2/3;
+}
+#image-div_5>div:nth-child(2){
+    background-image: url(https://images-static.nykaa.com/uploads/7443372a-279f-4467-9431-d3602bb535f9.jpg?tr=w-600,cm-pad_resize);
+    grid-area: 1/3/2/5;
+}
+#image-div_5>div:nth-child(3){
+    background-image: url(https://images-static.nykaa.com/uploads/2d261551-a5b2-4a90-9a0d-0dcedbd9d152.jpg?tr=w-600,cm-pad_resize);
+    grid-area: 2/2/3/4;
+}
+
+#image-div_5>div>div{
+    border:1px solid #f3f3f3;
+    height:80px;
+    width:95%;
+    margin: auto;
+    margin-top: 250px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    line-height: 6px;
+}
+#image-div_5>div>div>p:first-child{
+  color:  #f8518e;
+}
+#image-div_5>div>div>p:last-child{
+ color: #9c8f8c;
+}
+/*---------------------------------------------------------------------------------------*/
+#image-div_5_below_img{
+    width:85%;
+    margin: auto;
+    margin-top: 50px;
+}
+#image-div_5_below_img:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+#image-div_5_below_img>img{
+    width:100%;
+}
+/*-----------------------      Bottom images of grey box - styling end          ---------------------------*/
+.mySlides4 {
+    display: none;
+    width:90%;
+    margin:auto;
+}
+.mySlides4:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container1 */
+.slideshow-container4 {
+    width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  
+}
+
+/* Next & previous buttons */
+.prev4, .next4 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.8s ease;
+  border-radius: 40px ;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next4 {
+  right: 0;
+  border-radius: 40px;
+}
+
+/* On hover, add a white background color  */
+.prev4:hover, .next4:hover {
+  background-color: rgb(255, 255, 255)
+}
+
+/*Fading animation */
+ .fade4 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+} 
+
+@keyframes fade4 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*-----------------------         sliding image 4th - styling end          ---------------------------*/
+
+/*-----------------------   GREY BOX STYLING END    ------------------------------------*/
+
+#image-div_6{
+    width:90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    row-gap:40px;
+    column-gap: 10px;
+}
+#image-div_6>div{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
+}
+#image-div_6>div:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#image-div_6>div>img{
+    width:100%;
+    border-radius: 15px;
+}
+#image-div_6>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#image-div_6>div>div{
+    background-color: white;
+    text-align:start;
+    border:1px solid white;
+    font-weight: 500;
+    line-height: 3px;
+    border-radius: 15px;
+}
+#image-div_6>div>div>p:first-child{
+    color:  #001325;
+    font: 11px;
+    font-weight: bold;
+}
+#image-div_6>div>div>p:last-child{
+    color: #a59697;
+    font-size: small;
+}
+
+/*---------------------      Brand  you can't miss title styling end      ---------------------------*/
+
+#image-div_7{
+    width:85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+}
+#image-div_7>div{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#image-div_7>div:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#image-div_7>div>img{
+    width:100%;
+}
+#image-div_7>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#image-div_7>div>div{
+    background-color: white;
+    text-align:start;
+    border:1px solid white;
+    font-weight: 500;
+    line-height: 3px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 0px;
+}
+#image-div_7>div>div>p:first-child{
+    color:  #001325;
+    font: 11px;
+    font-weight: bold;
+}
+#image-div_7>div>div>p:last-child{
+    color: #a59697;
+    font-size: small;
+}
+/*------------------------     Influencer's Festive Favourites Title styling end ------------------------------*/
+
+#gift_card{
+    width:43%;
+    margin: auto;
+}
+#gift_card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+#gift_card>img{
+    width:100%;
+}
+/*------------------------------------------------------------------------------------*/
+#spin_wheel{
+    width:85%;
+    margin: auto;
+    margin-top: 50px;
+}
+#spin_wheel:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+#spin_wheel>img{
+ width:100%;
+}
+/*------------------------     Gift card Title styling end ------------------------------*/
+#image-div_8{
+    width:85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+}
+#image-div_8>div:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#image-div_8>div>img{
+    width:100%;
+}
+#image-div_8>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/*------------------------/*------------------------/*------------------------*/
+#bottom_img_homepage{
+    width:85%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#bottom_img_homepage:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+#bottom_img_homepage>img{
+ width:100%;
+}
