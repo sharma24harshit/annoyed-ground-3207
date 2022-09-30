@@ -1,0 +1,147 @@
+#homepage_titles_mens-page{
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#3f4152;
+}
+* {box-sizing: border-box;}
+body {margin:0}
+.mySlides-menspage {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container-mens-page {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+.mySlides-menspage{
+ width:100%;
+}
+.mySlides-menspage>img{
+    width:100%;
+}
+#main_slideshow-container-mens-page{
+    background-color: #f3f3f3;
+}
+/* Fading animation */
+.fade-menspage{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade-menspage {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ /*-----------------------       top sliding image (Mens page) styling end          ---------------------------*/
+ #mens-page_img-div_1{
+    width:90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:20px;
+}
+
+#mens-page_img-div_1>div>img{
+    width:100%;
+}
+#mens-page_img-div_1>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#mens-page_img-div_1>div>div{
+    text-align:start;
+    line-height: 3px;
+}
+#mens-page_img-div_1>div>div>p:first-child{
+    color:  #001333;
+    text-align: center;
+    font:12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mens-page_img-div_1>div>div>p:last-child{
+    color:  #98979c;
+    font-size:18px;
+    text-align:center;
+    text-overflow: inherit;
+    
+}
+#mens-page_img-div_1>div>div>p:nth-child(2){
+    color:  #98979c;
+    font-size:18px;
+    text-align:center;
+}
+#mens-page_img-div_1>div:nth-child(11){
+ grid-area: 3/2/4/3;
+}
+#mens-page_img-div_1>div:nth-child(12){
+    grid-area:3/3/4/4; ;
+}
+/*-----------------------         Top Brands Title - (Mens page) styling end           ---------------------------*/
+
+#mens-page_img-div_2{
+    width:90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap:10px;
+}
+#mens-page_img-div_2>div{
+    cursor: pointer;
+    width:100%;
+    text-align: center;
+    color:  #001333;
+    font:12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mens-page_img-div_2 img{
+    width:100%;
+}
+/*-----------------------          SHOP BY CONCERN Title - (Mens page) styling end           ---------------------------*/
+#mens-page_img-div_3{
+    width:70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+#mens-page_img-div_3 img{
+    width:100%;
+}
+#mens-page_img-div_3>div:hover{
+    cursor: pointer;
+}
+#mens-page_img-div_3>div{
+    text-align:start;
+    line-height: 3px;
+}
+#mens-page_img-div_3>div>img+p{
+    color:  #001333;
+    text-align: center;
+    font:12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mens-page_img-div_3>div>p:last-child{
+    color:  #98979c;
+    font-size:18px;
+    text-align:center;
+}
+    /*----------------------       SHOP BY CONCERN Title - (Mens page) styling end       ---------------------------*/
+
+#mens-page-img-div_4{
+    width:90%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin:auto;
+    gap:10px;
+    margin-bottom: 50px;
+}
+/*----------------------       NEW LAUNCHES Title - (Mens page) styling end       ---------------------------*/
+
+
+

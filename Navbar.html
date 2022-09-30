@@ -122,40 +122,48 @@
       font-weight: bold;
       cursor: pointer;
     }
-         /* ********************    drop navbar styling  **************************/
+/* **************************    drop navbar styling  **********************************/
   .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  width: 60%;
-  left: 30;
+  background-color: white;
+  width: 80%;
+  left: 10;
   z-index: 1;
 }
 
 #dropdown_makeup:hover .dropdown-content {
   display: block;
 }
+#dropdown_skin:hover .dropdown-content {
+  display: block;
+   position:fixed;
+   margin: auto;
+  right: 10%;
+}
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 30%;
-  padding: 10px;
-  background-color: #ccc;
-  height: 400px;
+  width: 15%;
+  padding: 8px;
+  background-color: white;
+  height: auto;
+  font-size: 14px;
 }
 
 .column a {
   float: none;
-  color: black;
+  color: rgb(117, 114, 121);
   padding: 4px;
   text-decoration: none;
   display: block;
   text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .column a:hover {
-  background-color: #ddd;
+    color:rgb(247, 21, 134);
 }
 
 /* Clear floats after the columns */
@@ -163,6 +171,20 @@
   content: "";
   display: table;
   clear: both;
+}
+.row>div:nth-child(even){
+    background-color: #f5f4f4;
+}
+#dropdown-black{
+ color:rgb(71, 70, 70);
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold;
+}
+#dropdown-black:hover{
+    color:rgb(247, 21, 134);
+}
+#dropdown-hidden_ele{
+ visibility: hidden;
 }
 
    /*******************************    Homepage footer styling    ******************************/
@@ -230,8 +252,46 @@
     text-transform: uppercase;
     font-family: monospace;
     font-size: 16px;
-    
    }
+/*******************************    Homepage footer-image section styling    ******************************/
+   #footer-img_section{
+    height:250px;
+    background-color: #f3f3f3;
+   }
+   #footer-img_section-main{
+    background-color: #f3f3f3;
+    height: 100%;
+    width:80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 60px;
+   }
+   #footer-img_section-main>div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+   #footer-img_section-main>div>div>p:first-child{
+  color: #3f414d ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+    font-size: 15px;
+   }
+   #footer-img_section-main>div>div>p:last-child{
+    color: #6d6c7a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+   }
+/*******************************    Homepage footer-Bottom section styling    ******************************/
+#footer-bottom{
+    background-color:#fc2779;
+    height:80px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+
 </style>
 
 <body>
@@ -276,9 +336,9 @@
             </div>
 
         </div>
-        <!-- mid Navbar start -->
+        <!-- mid Navbar End -->
 <!-- //******************************************************************************// -->
-        <!-- mid Navbar start -->
+        <!-- Bottom Navbar start -->
       
         <div id="bottom-navbar">
             <div id="bottom-navbar_main">
@@ -287,16 +347,101 @@
                     <div class="dropdown-content">
                            
                         <div class="row">
-                          <div class="column"></div>
+                          <div class="column">
+                            <a id="dropdown-black">Face</a> <a>Face Primer</a> <a>Concealer</a> <a>Foundation</a> <a>Compact</a> <a>Contour</a>
+                    <a>Loose Powder</a> <a>Tined Moisturizer</a> <a>Blush</a> <a>Bronzer</a> <a>BB & CC Cream</a>
+                     <a>Highlighters</a> <a>Setting Spray</a> <a>Makeup Remover</a> <a>Sindoor</a> 
+
+                          </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Eyes</a> <a>Kajal</a> <a>Eyeliner</a> <a>Mascara</a> <a>Eye Shadow</a> <a>Eye Brow Enhancer</a>
+                    <a>Eye Primer</a> <a>False Eyelashes</a> <a>Eye Makeup Remover</a> <a>Under Eye Concealer</a> 
+                    <a>Contact Lenses</a> <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Makeup Kits & Combos</a> <a>Makeup Kits</a> <a>Makeup Combos</a>
+                          </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Lips</a> <a>Lipstick</a> <a>Liquid Lipstick</a> <a>Lip Crayon</a>
+                     <a>Lip Gloss</a> <a>Lip Liner</a> <a>Lip Plumber</a>
+                    <a>Lip Stain</a> <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Nails</a> <a>Nail Polish</a> <a>Nail Art Kits</a>
+                     <a>Nail Care</a> <a>Nail Polish Remover</a>
+                    <a></a>
+                           </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Tools & Brushes</a> <a>Face Brush</a> <a>Eye Brush</a> <a>Lip Brush</a>
+                    <a>Brush Sets</a> <a>Brush Cleaners</a> <a>Sponges & Applicators</a> <a>Eyelash Curlers</a>
+                    <a>Tweezers</a> <a>Sharpeners</a> <a>Mirrors</a> <a>Makeup Pouches</a>
+                    <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Multi-Functional Makeup Palettes</a> 
+                          </div>
+
+                         <div class="column">
+                    <a id="dropdown-black">Top Brands</a> <a>Kay Beauty</a> <a>Huda Beauty</a> <a>Charlotte Tibury</a>
+                    <a> M.A.C</a> <a>Maybelline New York</a> <a>L'Oreal Paris</a>  <a> Lakme</a>
+                     <a>Nykaa Cosmetics</a> <a>Nyx Pro.Makeup</a> 
+                        </div>
+
+                        <div class="column">
+                    <a id="dropdown-black">Quick Links</a> <a>Combos @ Nykaa</a> <a>New Launches</a> <a>NFBA Nominees 202</a>
+                    <a>Gits @ Nykaa</a> <a>The Gift Store</a> <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Trending Searches</a>
+                    <a>Nude Lipstick</a> <a>Matte Lipstick</a> <a>Red Lipstick</a> <a>Pink Lipstick</a>
+                          </div>
                           
                         </div>
                       </div>
                 </div>
-
-                <div>
+<!-- //-------------------------------------------------------------------------------------------------------------// -->
+                <div id="dropdown_skin">
                     <button>Skin</button>
-                </div>
+                    <div class="dropdown-content">
+                           
+                        <div class="row">
+                          <div class="column">
+                            <a id="dropdown-black">Moisturizers</a> <a>Face Moisturizer & Day</a> <a>Cream</a> <a>Night Cream</a> <a>Face Oils</a> <a>Serums & Essence</a>
+                    <a>All Purpose Gels/Creams</a>  <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Cleansers</a> <a>Face Wash</a> 
+                     <a>Cleanser</a> <a>Micellar Water</a> <a>Face Wipes</a> <a>Makeup Remover</a>  <a>Scrubs & Exfoliators</a>
 
+                          </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Trending Searches</a> <a>Toners Under 1000</a> <a>Face Wash For Oily Skin</a> <a>Oil Free Face</a> <a>Moisturizers</a> <a>Lip Balm Under 500</a>
+                    <a>Vitamin C Serum</a> <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Masks</a> <a>Sheet Masks</a> <a>Sleeping Masks</a> 
+                    <a>Masks & Peels</a>   <a>Face Packs</a> <a>Face Bleach</a> <a id="dropdown-hidden_ele">-</a><a id="dropdown-black">Toners</a> <a>Toners & Mists</a> <a>Rose Water</a> 
+                          </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Body Care</a> <a>Lotions & Creams</a> <a>Body Butter</a> <a>Massage Oils</a>
+                     <a>Shower Gels & Body</a> <a>Wash</a> <a>Soaps</a>
+                    <a>Scrubs & Loofahs</a> <a>Bath Salt</a><a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Hands & Feet</a> <a>Hand Creams</a> <a>Foot Creams</a>
+                     <a>Hand & Foot Masks</a> <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">I-Beauty By Nykaa - CSMS</a>
+                    <a></a>
+                           </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Neck Creams</a> <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Specialised Skincare</a>
+                    <a>Acne Spot Correctors</a> <a>Nose Strips</a> <a>Facial Peels</a> <a id="dropdown-hidden_ele">-</a> 
+                    <a id="dropdown-black">Eye Care</a> <a>Under Eye Cream & Serums</a> <a>Eye Masks</a>
+                    <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Lip Care</a> <a>Lip Balm</a> <a>Lip Scrubs</a>
+                    <a>Lip Masks</a> <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">SunCare</a>  <a>Face Sunscreen</a> <a>Body Sunscreen</a> 
+                          </div>
+
+                         <div class="column">
+                    <a id="dropdown-black">Kits & Combos</a> <a>Facial Kits</a> <a>Combos @ Nykaa</a> <a>Gift Sets</a>
+                    <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Skin Tools</a> <a>Face Massagers</a> <a>Cleansing Brushes</a>
+                     <a>Blackhead Remover</a> <a>Dermarollers</a> 
+                     <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Skin Supplements</a> <a>Vitamins & Minerals</a> <a>Ayurvedic Herbs</a>
+                        </div>
+
+                        <div class="column">
+                    <a id="dropdown-black">Shop By Concern</a> <a>Acne</a> <a>Dull Skin</a> <a>Pigmentation</a>
+                    <a>Wrinkles & Fine Lines</a> <a>Pores</a>  <a>Dark Spots</a> <a>Face Tan</a>
+                    <a>Oil Control</a><a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Quick Links</a> <a>The Gift Store</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                </div>
+<!-- //-------------------------------------------------------------------------------------------------------------// -->
                 <div>
                     <button>Hair</button>
                 </div>
@@ -364,11 +509,39 @@
         </div>
 <!-- ***********************************    footer-top end   ********************************** -->
         <div id="footer-mid"></div>
+<!-- ***********************************    footer-mid end   ********************************** -->
+        <div id="footer-img_section">
+           <div id="footer-img_section-main">
 
-        <div id="footer-bottom"></div>
+           <div>
+            <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Free-shipping.svg" alt=""></div>
+            <div><p>Free Shipping</p><hr><p>On Orders Above ₹499</p></div>
+           </div>
 
-        <div id="footer-end"></div>
+           <div>
+            <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/return_accepted.svg" alt=""></div>
+            <div><p>Easy Returns</p><hr><p>15-Day Return Policy </p></div>
+           </div>
 
+           <div>
+            <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Authenticity.svg" alt=""> </div>
+            <div><p>100% Authentic</p><hr><p>Products Sourced Directly</p></div>
+           </div>
+
+           <div>
+            <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Brands.svg" alt=""></div>
+            <div><p>2400+ Brands</p><hr><p>1.9 Lakh+ Products</p></div>
+           </div>
+
+           </div>
+
+        </div>
+<!-- ***********************************    footer-image Section end   ********************************** -->
+        <div id="footer-bottom">
+            <div></div>
+            <div>© 2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</div>
+        </div>
+<!-- ***********************************    footer-bottom end   ********************************** -->
      </div>
 </body>
 </html>
@@ -389,7 +562,9 @@
     setInterval("hidediv()",2000);
 
     ////   Top-navbar timed text code /////
+
     ////    **********************************************   ///
+
     // ************  Drop down code ******************* //
     var prevScrollpos = window.pageYOffset;
       window.onscroll = function() {
@@ -402,23 +577,6 @@
     prevScrollpos = currentScrollPos;
     }
    ////////////  **********************************************///////////////////////
-   
-   let objColumn1 = [
-    "Face", "Face Primer", "Concealer", "Foundation", "Compact", "Contour", 
-    "Loose Powder", "Tined Moisturizer", "Blush", "Bronzer","BB & CC Cream",
-    "Highlighters", "Setting Spray", "Makeup Remover", "Sindoor",
-]
-   
-   let col = document.querySelector(".column");
-   
-
-   objColumn1.forEach(function (el){
-       
-       let row = document.createElement("a");
-       row.innerText = el;
-       col.append(row);
-   })
-   
 
 </script>
 
