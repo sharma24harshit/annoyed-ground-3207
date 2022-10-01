@@ -1,0 +1,63 @@
+.beard_oil-container{
+    background-color: #f3f3f3;
+    padding: 50px;
+}
+.beard_oil-container>h2>span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.beard_oil-container>h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+.beard_oil-container>h2:first-child{
+    margin-top: 40px;
+}
+.beard_oil-main{
+    width:90%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    row-gap: 40px;
+    column-gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.beard_oil-main>div{
+ background-color: white;
+ padding: 10px;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.beard_oil-main>div button{
+    width:100%;
+    font-size: 15px;
+    padding: 15px ;
+    background-color: #fc2e79;
+    color: white;
+    font-weight: bold;
+    border: 0;
+}
+.beard_oil-main>div>button:hover{
+    background-color: #f3a2c0;
+    cursor: pointer;
+}
+.beard_oil-main>div>p:nth-child(2){
+    color: #001325;
+    font-weight: bold;
+}
+p>span:nth-child(1){
+    color:  #8a8787;
+}
+p>span:nth-child(2){
+    color:  #8a8787;
+    text-decoration: line-through;
+}
+p>span:nth-child(3){
+    font-weight: bold;
+}
+.beard_oil-main>div>p:nth-child(4){
+    color:#fc2e79;
+}
+
+ 
