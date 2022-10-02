@@ -17,6 +17,7 @@
       /*****************    Top navabr styling    *****************8*/
     #navbar{
         cursor: pointer;
+        margin-bottom: 30px;
     }
     #top-navbar{
         display:flex;
@@ -49,6 +50,7 @@
         height:70px;
         display: flex;
         justify-content: space-between;
+        background-color: white;
         padding: 0 70px ;
     }
     #mid-navbar>div:first-child{
@@ -62,9 +64,11 @@
         color:rgb(3,2,26);
     }
     #logo{
-        height: 65%;
+    width:50px;
+    height:60%;
+    margin-right: 20px;
     }
-    #logo>img{
+    #logo>a>img{
         height:100%;
     }
     #mid-navbar>div:last-child{
@@ -117,6 +121,14 @@
         border:0;
         height:50px;
     }
+    #mens-page-button>a{
+        color: rgb(117, 114, 121);
+        text-decoration-line: none;
+    }
+    #mens-page-button>a:hover{
+        color:rgb(247, 21, 134);
+        cursor: pointer;
+    }
     #bottom-navbar_main>div>button:hover{
         color:rgb(247, 21, 134);
       font-weight: bold;
@@ -136,6 +148,12 @@
   display: block;
 }
 #dropdown_skin:hover .dropdown-content {
+  display: block;
+   position:fixed;
+   margin: auto;
+  right: 10%;
+}
+#dropdown_men:hover .dropdown-content {
   display: block;
    position:fixed;
    margin: auto;
@@ -290,6 +308,54 @@
     margin-bottom: 50px;
     text-align: center;
     color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footer-bottom>div:first-child{
+ display: flex;
+ width:50%;
+ margin: auto;
+ justify-content: space-evenly;
+}
+/*******************************    Homepage footer-mid section styling    ******************************/
+#footer-mid{
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 45px 25px;
+    line-height: 15px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8c8d94;
+    color: rgb(247, 242, 242);
+}
+#footer-mid>div{
+    width:15%;
+}
+#footer-mid-hidden-ele{
+  visibility: hidden;
+}
+#footer-mid-nykaa-logo{
+ font-size: 20px;
+ color: white;
+ font-weight: bold;
+}
+#footer-mid-title{
+ font-size: 15px;
+ color: white;
+ font-weight: bold;
+}
+#footer-mid>div>p:hover{
+    color:rgb(247, 21, 134);
+    cursor: pointer;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#footer{
+    padding-top: 180px;
 }
 
 </style>
@@ -321,7 +387,7 @@
         <div id="mid-navbar">
 
             <div>
-                <div id="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK47iYyT-3X758RkOppaeJ6z-1UPe_ehVqq-ldzFiA_Rw3Cwv_vQY_vk0MtNo7DsZg_Eg&usqp=CAU" alt="Nykaa logo img"></div>
+                <div id="logo"> <a href="./Home page content/Homepage_content.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK47iYyT-3X758RkOppaeJ6z-1UPe_ehVqq-ldzFiA_Rw3Cwv_vQY_vk0MtNo7DsZg_Eg&usqp=CAU" alt="Nykaa logo img"></a></div>
                 <div>Categories</div>
                 <div>Brands</div>
                 <div>Luxe</div>
@@ -466,8 +532,51 @@
                     <button>Health & Wellness</button>
                 </div>
 
-                <div>
-                    <button>Men</button>
+                <div id="dropdown_men">
+                    <button id="mens-page-button"> <a href="./Mens page/mens.html">Men</a></button>
+                    <div class="dropdown-content">
+                           
+                        <div class="row">
+                          <div class="column">
+                            <a id="dropdown-black">Shaving</a> <a>Razors & Cartridges</a> <a>Shavers</a> <a>Trimmers</a> <a>Shaving Cream</a> <a>Shaving Foam</a>
+                    <a>Shaving Gels</a> <a>Pre & Post Shaves</a> <a>Aftershave Lotion</a> <a>Shaving Brushes</a> 
+                            </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Beard Care</a> <a href="./Beard Oil page/Beard_oil.html">Beard Oil</a> <a>Beard Butter</a> <a>Beard Softener</a> <a>Beard Wash</a>
+                    <a> Beard Wax</a> <a>Moustache Oil</a> <a>Beard Combo</a> <a>Beard Serum</a>  <a>Beard Mist</a> <a>Beard Color</a>
+                    <a>Moustache Wax</a>   <a>Beard Kits</a> <a>Beard Gel</a>  <a>Beard Balm</a> <a>Beard Cream</a> 
+                          </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Bath & Body</a> <a>Bath/Shower Gels</a> <a>Soaps</a> <a>Body Scrubs</a>
+                     <a> Talc</a> <a>Dental Care</a> <a>Body Lotions</a>
+                    <a>Intimate Care</a> <a id="dropdown-hidden_ele">-</a> <a id="dropdown-black">Grooming Kits</a> <a id="dropdown-hidden_ele">-</a> 
+                    <a id="dropdown-black"> Fragrance</a> <a>Deodorants/Roll Ons</a> <a>Colognes & Perfumes</a> <a>Luxe Fragrance</a>
+                    <a></a>
+                           </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Hair Care</a>  <a>Shampoo</a> <a>Conditioner</a> <a>Hair Styling</a>
+                    <a>Hair Color</a> <a>Hair Oils</a> <a>Professional Products</a> <a id="dropdown-hidden_ele">-</a> 
+                    <a id="dropdown-black">Skin Care</a> <a>Face Wash</a> <a>Moisturizers</a>
+                     <a>Sunscreen</a> <a>Masks & Peels</a> <a>Scrubs & Exfoliators</a>   <a>Fairness</a>  
+                          </div>
+
+                         <div class="column">
+                    <a id="dropdown-black">Shop By Concern</a>  <a>Anti Dandruff</a> <a>Anti Hairfall</a>
+                    <a>Scalp Treatment</a> <a>Anti Acne</a> <a>Anti Ageing</a> <a id="dropdown-hidden_ele">-</a>
+                     <a id="dropdown-black"> Wellness</a> <a>Health Supplements</a> <a>Weight Management</a> <a>Sports Nutrition</a>
+                        </div>
+
+                        <div class="column">
+                    <a id="dropdown-black">Top Brands</a> <a>Beardo</a> <a>Gilette</a> <a>Livon</a>
+                    <a>Nivea</a> <a>Park Avenue</a>  <a id="dropdown-hidden_ele">-</a>  <a id="dropdown-black">Quick Links</a>
+                    <a>Combos @ Nykaa</a> <a>New Launches</a> <a>Gifts @ Nykaa</a> <a>Routine Finder</a> <a>The Gift Store</a>
+                          </div>
+                          
+                        </div>
+                      </div>
                 </div>
 
                 <div>
@@ -508,7 +617,67 @@
 
         </div>
 <!-- ***********************************    footer-top end   ********************************** -->
-        <div id="footer-mid"></div>
+        <div id="footer-mid">
+
+            <div>
+                <p id="footer-mid-nykaa-logo"><i> NYKAA</i></p>
+                <p id="footer-mid-hidden-ele">-</p>
+                <p>Who are we?</p>
+                <p>Careers</p>
+                <p>Authenticity</p>
+                <p>Press</p>
+                <p>Testimonials</p>
+                <p>Nykaa CSR</p>
+                <p>Responsible Disclosure</p>
+                <p>Investor Relations</p>
+            </div>
+
+            <div>
+                <p id="footer-mid-title">Help</p>
+                <p id="footer-mid-hidden-ele">-</p>
+                <p>Contact Us</p>
+                <p>Frequently asked questions</p>
+                <p>Store Locator</p>
+                <p>Cancellation & Return</p>
+                <p>Shipping & Delivery</p>
+                <p>Sell on Nykaa</p>
+            </div>
+
+            <div>
+                <p id="footer-mid-title">Inspire Me</p>
+                <p id="footer-mid-hidden-ele">-</p>
+                <p>Beauty Book</p>
+                <p>Nykaa TV</p>
+                <p>Nykaa Network</p>
+                <p>Buying Guides</p>
+            </div>
+
+            <div>
+                <p id="footer-mid-title">Quick Links</p>
+                <p id="footer-mid-hidden-ele">-</p>
+                <p>Offer Zone</p>
+                <p>New Launches</p>
+                <p>Nykaa Man</p>
+                <p>Nykaa Fashion</p>
+                <p>Nykaa Pro</p>
+                <p>Nykaa femina beauty awards winners 2019</p>
+                <p>Sitemap</p>
+            </div>
+
+            <div>
+                <p id="footer-mid-title">Top Categories</p>
+                <p id="footer-mid-hidden-ele">-</p>
+                <p>Makeup</p>
+                <p>Skin</p>
+                <p>Hair</p>
+                <p>Personal Care</p>
+                <p>Appliances</p>
+                <p>Mom and Baby</p>
+                <p>Wellness</p>
+                <p>Fragrance</p>
+            </div>
+
+        </div>
 <!-- ***********************************    footer-mid end   ********************************** -->
         <div id="footer-img_section">
            <div id="footer-img_section-main">
@@ -538,7 +707,7 @@
         </div>
 <!-- ***********************************    footer-image Section end   ********************************** -->
         <div id="footer-bottom">
-            <div></div>
+            <div> <p>Terms & Conditions  </p><p> Shipping Policy</p> <p>Cancellation Policy</p> <p>Privacy Policy</p></div>
             <div>© 2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</div>
         </div>
 <!-- ***********************************    footer-bottom end   ********************************** -->
@@ -566,18 +735,24 @@
     ////    **********************************************   ///
 
     // ************  Drop down code ******************* //
-    var prevScrollpos = window.pageYOffset;
-      window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-         document.getElementById("bottom-navbar").style.top = "0";
-        } else {
-         document.getElementById("bottom-navbar").style.top = "-50px";
-        }
-    prevScrollpos = currentScrollPos;
-    }
-   ////////////  **********************************************///////////////////////
+    window.onscroll = function() {myFunction()};
 
+     var navbar = document.getElementById("navbar");
+     var sticky = navbar.offsetTop;
+      
+     function myFunction() {
+        console.log(sticky)
+      if (window.pageYOffset >= sticky) {
+         navbar.classList.add("sticky")
+      } else {
+         navbar.classList.remove("sticky");
+      }
+    //   if(offsetTop==0){
+    //     navbar.classList.remove("sticky");
+    //   }
+   }
+   ////////////  **********************************************///////////////////////
+   
 </script>
 
                             
